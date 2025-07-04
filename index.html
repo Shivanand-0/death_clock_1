@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Death Clock</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>🕒 Death Clock</h1>
+  <form action="/predict" method="POST">
+    <label>Name:</label><br>
+    <input name="name" required><br><br>
+
+    <label>Age:</label><br>
+    <input name="age" type="number" required><br><br>
+
+    <label>Do you smoke?</label><br>
+    <select name="smoker">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br><br>
+
+    <label>Physical activity level:</label><br>
+    <select name="activity">
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select><br><br>
+
+    <button type="submit">Predict Death Date</button>
+  </form>
+</body>
+</html>
+

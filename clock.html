@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Death Clock</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="clock-wrapper">
+      <div class="rotating-second" id="rotating-second"></div>
+
+      <h1 class="title">💀 Your Death Countdown 💀</h1>
+      <div class="countdown" id="countdown">
+        <div><span id="years">0</span><p>Years</p></div>
+        <div><span id="days">0</span><p>Days</p></div>
+        <div><span id="hours">0</span><p>Hours</p></div>
+        <div><span id="minutes">0</span><p>Minutes</p></div>
+        <div><span id="seconds">0</span><p>Seconds</p></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
